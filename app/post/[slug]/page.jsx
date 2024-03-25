@@ -1,6 +1,6 @@
 const getdata=async(slug)=>{
     // const res=await fetch(`https://jsonplaceholder.typicode.com/posts/${slug}`,{cache:'no-store'})
-    const res = await fetch(`https://fakestoreapi.com/products/${slug}`);
+    const res = await fetch(`https://fakestoreapi.com/products/${slug}`,{cache:'no-store'});
      if (!res.ok) {
        throw new Error ("Something went wrong")
      }
